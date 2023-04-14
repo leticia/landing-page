@@ -2,5 +2,43 @@
  * cores, fontes, etc.
  */
 
-html {
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
 }
+
+html {
+  font-family: 'Inter';
+}
+
+h1 {
+  font-family: 'Inter';
+  font-size: 2.5em;
+}
+
+nav#menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav#menu ul li {
+  float: left;
+  padding: 20px;
+}
+
+nav#menu ul li a {
+  font-size: 0.9em;
+  text-decoration: none;
+  color: black;
+}
+
+footer ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: black;
+}
+
