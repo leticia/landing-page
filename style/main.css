@@ -43,41 +43,87 @@
 
 /* Estilo que é aplicado caso não haja regra
  * mais específica */
-html {
+html, body {
   font-family: 'Inter-Light';
+  height: 100vh; /* Usa a altura do viewport */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 5% 0;
+  overflow: auto;
+}
+
+section p {
+  font-family: 'Inter-Light';
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: grey;
 }
 
 /* Classes de estilo que podem se repetir */
 
-h1.subtitle {
-  font-family: 'Inter-SemiBold';
-  font-size: 24px;
+.right {
+  float: right !important;
 }
 
-/* Título Principal */
-h1#title {
+.left {
+  float: left !important;
+}
+
+h1.subtitle {
   font-family: 'Inter-SemiBold';
-  font-size: 2.5em;
+  font-size: 1.3em;
+  margin-bottom: 1em;
 }
 
 /* Menu */
-header nav#menu ul {
+header {
+  border-bottom: 1px solid #EEE;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
 }
 
-header nav#menu ul li {
-  float: left;
-  padding: 20px;
-}
-
-header nav#menu ul li a {
+header ul li {
+  margin: 30px 20px 30px 0;
   font-family: 'Inter-SemiBold';
   font-size: 0.8em;
+}
+
+header ul li a {
   text-decoration: none;
   color: black;
+}
+
+header ul li#button a {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Seção Principal */
+main {
+  flex: 1;
+  overflow: auto;
+  padding: 10%;
+}
+
+section#landing {
+}
+
+section#landing h1#title {
+  font-family: 'Inter-SemiBold';
+  font-size: 7em;
 }
 
 /* Seção Sobre Nós */
@@ -85,13 +131,35 @@ header nav#menu ul li a {
 section#about {
 }
 
-section#about p {
-  font-family: 'Inter-Light';
-  font-size: 12px;
-  color: grey;
+
+/* Seção Serviços Prestados */
+section#services {
+}
+
+/* Seção Contato */
+section#contact {
 }
 
 /* Rodapé */
+footer {
+  font-family: 'Inter-Light';
+  border-top: 1px solid #EEE;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ul li {
+}
+
 footer ul li a {
   font-size: 0.8em;
   text-decoration: none;
