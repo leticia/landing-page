@@ -94,6 +94,7 @@ header ul {
   flex-wrap: wrap;
   justify-content: center;
   list-style-type: none;
+  margin-top: 0.5em;
 }
 
 header ul li {
@@ -105,6 +106,7 @@ header ul li {
 header ul li a {
   text-decoration: none;
   color: black;
+  cursor: pointer;
 }
 
 header ul li#appointment-button a {
@@ -132,12 +134,10 @@ main {
   overflow: auto;
 }
 
-section#landing {
-}
-
 section#landing h1#title {
   font-family: 'Inter-SemiBold';
-  font-size: 7em;
+  font-size: 6em;
+  margin-left: 0.5em;
 }
 
 /* Seção Sobre Nós */
@@ -162,41 +162,9 @@ section#contact {
   text-align: center;
 }
 
-/* Rodapé */
-footer {
-  font-family: 'Inter-Light';
-  border-top: 1px solid #EEE;
-  text-align: center;
-}
-
-footer p {
-  font-size: 0.7em;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-footer ul li {
-  margin: 1em 1.5em 1em 0;
-  font-family: 'Inter-SemiBold';
-}
-
-footer ul li a {
-  font-size: 0.8em;
-  text-decoration: none;
-  color: black;
-}
-
-footer p {
-  color: grey;
-  padding-bottom: 1em;
-}
-
-footer img {
-  width: 2.4em;
+section#contact p {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
 }
 
 .contact-item {
@@ -249,4 +217,41 @@ textarea {
   background-color: #EEE;
   color: black;
   /* transform: translate(0, -5px); */
+}
+
+/* Rodapé */
+footer {
+  font-family: 'Inter-Light';
+  border-top: 1px solid #EEE;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 1em 1.5em 1em 0;
+  font-family: 'Inter-SemiBold';
+}
+
+footer ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  color: grey;
+  padding-bottom: 1em;
+}
+
+footer img {
+  width: 2.4em;
 }
