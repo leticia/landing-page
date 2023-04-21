@@ -1,9 +1,9 @@
 @media (max-width: 755px) {
     header ul li {
-        margin: 2em 1.5em 0.5em 0;
+        margin-bottom: 0.5em;
     }
 
     header ul li#button {
-    margin-bottom: 2em;
+        margin-bottom: 2em;
     }
 }
