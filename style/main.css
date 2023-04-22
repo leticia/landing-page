@@ -63,6 +63,9 @@ section p {
   font-size: 0.8em;
   line-height: 1.5em;
   color: grey;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+
 }
 
 /* Classes de estilo que podem se repetir */
@@ -149,6 +152,7 @@ section#services {
 /* Seção Contato */
 section#contact {
   padding: 8%;
+  text-align: center;
 }
 
 /* Rodapé */
@@ -188,3 +192,54 @@ footer img {
   width: 2.4em;
 }
 
+.contact-item {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.3em;
+  margin-bottom: 0.6em;
+
+}
+
+.contact-list{
+  color: grey;
+  line-height: 1.7;
+}
+
+.contact-message{
+  font-family: 'Inter-SemiBold';
+  margin-top: 1em;
+  margin-bottom: 1.3em;
+}
+
+form input {
+  border: 1.5px solid rgba(128, 128, 128, 0.625);
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.092);
+  text-align: center;
+  padding: 3px;
+  width: 14em;
+}
+
+textarea {
+  font-family: 'Inter-Light';
+  text-align: center;
+  width: 288px;
+  height: 59px;
+
+}
+
+.submit {
+  color: white;
+  background-color: black;
+  padding: 1em;
+  border-radius: 20px;
+  font-weight: 700;
+  margin-top: 8px;
+  /* transition: 0.1s; */
+  
+}
+
+.submit:hover {
+  background-color: #EEE;
+  color: black;
+  /* transform: translate(0, -5px); */
+}
