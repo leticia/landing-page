@@ -1,0 +1,190 @@
+/* Aqui vai o CSS (estilo) que define
+ * cores, fontes, etc.
+ */
+
+/* Definição de fontes
+ * Use a propriedade 'font-family' no elemento
+ * em que deseja aplicá-la */
+
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url('../fonts/Inter-SemiBold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url('../fonts/Inter-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url('../fonts/Inter-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-Light';
+  src: url('../fonts/Inter-Light.ttf');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter-ExtraLight';
+  src: url('../fonts/Inter-ExtraLight.ttf');
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Estilo que é aplicado caso não haja regra
+ * mais específica */
+html, body {
+  font-family: 'Inter-Light';
+  height: 100vh; /* Usa a altura do viewport */
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 5% 0;
+  overflow: auto;
+}
+
+section p {
+  font-family: 'Inter-Light';
+  font-size: 0.8em;
+  line-height: 1.5em;
+  color: grey;
+}
+
+/* Classes de estilo que podem se repetir */
+
+.right {
+  float: right !important;
+}
+
+.left {
+  float: left !important;
+}
+
+h1.subtitle {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+/* Menu */
+header {
+  border-bottom: 1px solid #EEE;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+}
+
+header ul li {
+  margin: 2em 1.5em 2em 0;
+  font-family: 'Inter-SemiBold';
+  font-size: 0.8em;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+header ul li#button a {
+  color: white;
+  background-color: black;
+  padding: 1em;
+  border-radius: 20px;
+}
+
+header img#logo {
+  margin-top: -0.7em;
+  width: 2.4em;
+}
+
+/* Seção Principal */
+main {
+  flex: 1;
+  overflow: auto;
+}
+
+section#landing {
+}
+
+section#landing h1#title {
+  font-family: 'Inter-SemiBold';
+  font-size: 7em;
+}
+
+/* Seção Sobre Nós */
+
+section#about {
+  padding: 8%;
+  background-color: black;
+}
+
+section#about h1, section#about p {
+  color: white;
+}
+
+/* Seção Serviços Prestados */
+section#services {
+  padding: 8%;
+}
+
+/* Seção Contato */
+section#contact {
+  padding: 8%;
+}
+
+/* Rodapé */
+footer {
+  font-family: 'Inter-Light';
+  border-top: 1px solid #EEE;
+  text-align: center;
+}
+
+footer p {
+  font-size: 0.7em;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer ul li {
+  margin: 1em 1.5em 1em 0;
+  font-family: 'Inter-SemiBold';
+}
+
+footer ul li a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: black;
+}
+
+footer p {
+  color: grey;
+  padding-bottom: 1em;
+}
+
+footer img {
+  width: 2.4em;
+}
+
