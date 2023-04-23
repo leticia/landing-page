@@ -107,11 +107,18 @@ header ul li a {
   color: black;
 }
 
-header ul li#button a {
+header ul li#appointment-button a {
   color: white;
   background-color: black;
   padding: 1em;
+  border: 1.5px solid black;
   border-radius: 20px;
+}
+
+header ul li#appointment-button a:hover {
+  border: 1.5px solid rgba(128, 128, 128, 0.625);
+  background-color: #EEE;
+  color: black;
 }
 
 header img#logo {
