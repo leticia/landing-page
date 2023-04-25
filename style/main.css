@@ -266,6 +266,17 @@ section#services {
   padding: 8%;
 }
 
+#imagens{
+   
+  width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+#descrição{
+  text-align:center;
+}
+
 /* Seção Contato */
 section#contact {
   padding: 8%;
