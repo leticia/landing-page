@@ -76,7 +76,7 @@ section p {
 
 h1.subtitle {
   font-family: 'Inter-SemiBold';
-  font-size: 1.3em;
+  font-size: 2em;
   margin-bottom: 1em;
 }
 
@@ -243,16 +243,10 @@ section#about {
 section#about h1 {
   color: white;
   font-family: 'Inter-SemiBold';
-  font-size: 2.5em;
 }
 
 section#about p {
   color: white;
-}
-
-section#about h1.second_subtitle{
-  margin-top: 2em;
-  margin-bottom: 0.8em;
 }
 
 /* Seção Serviços Prestados */
@@ -261,7 +255,6 @@ section#services {
 }
 
 #imagens{
-   
   width: 400px;
   display: block;
   margin: 0 auto;
@@ -344,14 +337,20 @@ footer p {
   font-size: 0.7em;
 }
 
+footer p a {
+  color: black;
+  margin: 0;
+}
+
 footer ul {
   display: flex;
   justify-content: center;
   list-style-type: none;
+  margin: 1em 0;
 }
 
 footer ul li {
-  margin: 1em 1.5em 1em 0;
+  margin: 0 0.6em;;
   font-family: 'Inter-SemiBold';
 }
 

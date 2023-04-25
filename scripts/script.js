@@ -8,3 +8,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+
+// Comportamento do link de voltar ao topo da página
+document.querySelector('#home').onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
