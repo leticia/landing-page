@@ -6,6 +6,11 @@
     section#landing img {
         scale: 0.6;
     }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
 }
 
 @media (max-width: 755px) {
