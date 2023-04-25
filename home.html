@@ -23,7 +23,7 @@
         <li><a href="#services">Serviços Prestados</a></li>
         <li>·</li>
         <li><a href="#contact">Contato</a></li>
-        <li id="button" class="right">
+        <li id="appointment-button" class="right">
           <a href="#contact">Agende uma consulta!</a>
         </li>
       </ul>
@@ -39,26 +39,25 @@
 
       <!-- Aqui vai o conteúdo da seção "Serviços Prestados" -->
       <section id="services">
-      <h1 class="subtitle">Serviços Prestados</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas velit eget odio scelerisque tempus. Proin dui velit, dapibus quis dui vitae, sollicitudin sollicitudin lacus. Aliquam pellentesque fringilla dictum. Ut eget orci semper, tempus mauris nec, suscipit urna. Vestibulum magna odio, euismod eu auctor in, vehicula id lectus. Maecenas semper neque tortor, eu sodales lorem rutrum a. Donec et nisi eu urna finibus placerat quis in lacus. Suspendisse quam purus, euismod at urna non, ultricies scelerisque nisi. Suspendisse ut vehicula lorem, eget rhoncus justo. Morbi porttitor eros eu lectus blandit luctus. Aliquam vel quam tincidunt, molestie ligula quis, mollis sem. Aenean euismod quam ut dignissim tristique.</p>
+        <h1 class="subtitle">Serviços Prestados</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas velit eget odio scelerisque tempus. Proin dui velit, dapibus quis dui vitae, sollicitudin sollicitudin lacus. Aliquam pellentesque fringilla dictum. Ut eget orci semper, tempus mauris nec, suscipit urna. Vestibulum magna odio, euismod eu auctor in, vehicula id lectus. Maecenas semper neque tortor, eu sodales lorem rutrum a. Donec et nisi eu urna finibus placerat quis in lacus. Suspendisse quam purus, euismod at urna non, ultricies scelerisque nisi. Suspendisse ut vehicula lorem, eget rhoncus justo. Morbi porttitor eros eu lectus blandit luctus. Aliquam vel quam tincidunt, molestie ligula quis, mollis sem. Aenean euismod quam ut dignissim tristique.</p>
         <br>
 
-          <img id="imagens" src="images\Psicologia infantil.jpg" alt="Psicologia infantil"> 
-          <p id="descrição">Descrição sobre serviço de psicologia infantil</p>
-  
-          <br>
-         
-          <img id="imagens" src="images\Terapia ocupacional.jpg" alt="Terapia ocupacional">
-          <p id="descrição">Descrição sobre serviço de terapia ocupacional</p>
-         
-          <br>
-         
-          <img id="imagens" src="images\Musicoterapia.jpg" alt="Musicoterapia">
-          <p id="descrição">Descrição sobre serviço de musicoterapia</p>
-          <p id="descrição">Descrição sobre serviço de musicoterapia</p>
+        <img id="imagens" src="images\Psicologia infantil.jpg" alt="Psicologia infantil">
+        <p id="descrição">Descrição sobre serviço de psicologia infantil</p>
 
-       
+        <br>
+
+        <img id="imagens" src="images\Terapia ocupacional.jpg" alt="Terapia ocupacional">
+        <p id="descrição">Descrição sobre serviço de terapia ocupacional</p>
+
+        <br>
+
+        <img id="imagens" src="images\Musicoterapia.jpg" alt="Musicoterapia">
+        <p id="descrição">Descrição sobre serviço de musicoterapia</p>
+        <p id="descrição">Descrição sobre serviço de musicoterapia</p>
       </section>
+      <!-- /#services -->
 
       <!-- Aqui vai o conteúdo da seção "Sobre nós" -->
       <section id="about">
@@ -69,6 +68,79 @@
 
       <!-- Aqui vai o conteúdo da seção "Contato e Mídias Sociais" -->
       <section id="contact">
+        <h1 class="contact-item">Endereço</h1>
+      <p>
+        R. Sarmento Leite, 245 - Centro Histórico, Porto Alegre - RS,
+        90050-170
+      </p>
+      <p></p>
+      <h2 class="contact-item">Contatos</h2>
+      <ul class="contact-list">
+        <li>Email: happybodies@gmail.com </li>
+        <li>Instagram: @clinicahappybodies </li>
+        <!-- <li>Linkedin:</li> -->
+      </ul>
+    </div>
+    <p></p>
+
+    <div class="container">
+      <h1 class="contact-message">Nos envie uma mensagem:</h1>
+      <p></p>
+           <form
+             action="https://formsubmit.co/janiner.severo@ufcspa.edu.br"
+             method="POST"
+             class="form"
+           >
+ <!-- eh divas colokei meu email pessoal pois sou burra dps eu arrumo pfv nao responder o forms ! -->
+
+             <input
+               type="text"
+               name="name"
+               id="name"
+               placeholder="Seu nome*"
+               required
+             />
+             <p></p>
+            
+             <input
+               type="text"
+               name="email"
+               id="email"
+               placeholder="Seu e-mail*"
+               required
+             />
+
+             <p></p>
+
+             <input
+               type="text"
+               name="subject"
+               id="subject"
+               placeholder="Assunto*"
+               required
+             />
+
+             <p></p>
+
+             <textarea
+               name="message"
+               id="message"
+               placeholder="Sua mensagem*"
+               required
+             ></textarea>
+
+             <p></p>
+
+             <input class="submit" type="submit" value="Enviar mensagem" id="btn-submit" />
+             <input type="hidden" name="_captcha" value="true" />
+             <input
+               type="hidden"
+               name="_next"
+               value="https://happybodies.com.br/thanks.html"
+             />
+           </form>
+         </div>
+       </section>
       </section>
       <!-- /#contact -->
     </main>
