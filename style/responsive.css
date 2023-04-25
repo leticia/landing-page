@@ -1,0 +1,29 @@
+@media (max-width: 1050px) {
+    section#landing .landing-container {
+        flex-direction: column;
+    }
+
+    section#landing img {
+        scale: 0.6;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 755px) {
+    header ul li {
+        margin-bottom: 0.5em;
+    }
+
+    header ul li#button {
+        margin-bottom: 2em;
+    }
+
+    section#landing .landing-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
