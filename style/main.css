@@ -6,7 +6,7 @@
  * Use a propriedade 'font-family' no elemento
  * em que deseja aplicá-la */
 
-@font-face {
+ @font-face {
   font-family: 'Inter-SemiBold';
   src: url('../fonts/Inter-SemiBold.ttf');
   font-weight: 600;
@@ -48,10 +48,6 @@ html, body {
   height: 100vh; /* Usa a altura do viewport */
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-}
 
 section {
   padding: 5% 0;
@@ -60,7 +56,7 @@ section {
 
 section p {
   font-family: 'Inter-Light';
-  font-size: 0.8em;
+  font-size: 1.1em;
   line-height: 1.5em;
   color: grey;
   margin-top: 1em;
@@ -87,6 +83,10 @@ h1.subtitle {
 /* Menu */
 header {
   border-bottom: 1px solid #EEE;
+  background: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
 }
 
 header ul {
@@ -134,10 +134,109 @@ main {
   overflow: auto;
 }
 
+section#landing {
+  padding-top: 2em;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(239,252,255,1) 95%, rgba(238,252,255,1) 97%, rgba(210,246,255,1) 100%);
+}
+
+section#landing .landing-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5em;
+}
+
+section#landing .landing-container-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  vertical-align: top;
+}
+
+
 section#landing h1#title {
   font-family: 'Inter-SemiBold';
   font-size: 6em;
   margin-left: 0.5em;
+  padding-top: 0.5em;
+}
+
+section#landing h3#subtitle {
+  font-family: 'Inter-SemiBold';
+  font-size: 1.6em;
+  margin-left: 2em;
+  margin-top: 2em;
+}
+
+section#landing p#description {
+  font-family: 'Inter-Medium';
+  font-size: 1em;
+  margin-left: 3.2em;
+  margin-top: 3.2em;
+}
+
+section#landing img {
+  scale: 0.8;
+  z-index: 1;
+}
+
+section#landing .landing-container img{
+  position: relative;
+  top: -5em;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+.grid-item {
+  flex: 1;
+  margin: 0 10px;
+  flex-direction: row;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+section#landing p#partners {
+  text-align: center;
+  justify-content: center;
+}
+
+section#landing img#partner {
+  filter: grayscale(100%);
+  opacity: 0.3;
+  border-radius: 100%;
+  transition: 0.7s ease-in-out;
+  scale: 0.7;
+}
+
+section#landing img#partner:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+section#landing #btn_saberMais {
+  font-family: 'Inter-SemiBold';
+  color: white;
+  background-color: black;
+  padding: 1em;
+  margin: 1em 0 0 3em;
+  border-radius: 20px;
+  width: 20%;
+  text-align:center;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+section#landing #btn_saberMais:hover {
+  color: black;
+  background-color: white;
+  padding: 1em;
+  border-radius: 20px;
 }
 
 /* Seção Sobre Nós */
@@ -147,8 +246,19 @@ section#about {
   background-color: black;
 }
 
-section#about h1, section#about p {
+section#about h1 {
   color: white;
+  font-family: 'Inter-SemiBold';
+  font-size: 2.5em;
+}
+
+section#about p {
+  color: white;
+}
+
+section#about h1.second_subtitle{
+  margin-top: 2em;
+  margin-bottom: 0.8em;
 }
 
 /* Seção Serviços Prestados */
@@ -222,7 +332,6 @@ textarea {
 /* Rodapé */
 footer {
   font-family: 'Inter-Light';
-  border-top: 1px solid #EEE;
   text-align: center;
 }
 
