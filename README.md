@@ -4,6 +4,9 @@ Projeto da landing page de uma clínica para a @biocodejr.
 ### Design escolhido
 [Design](https://dribbble.com/shots/21103043-Website-UI)
 
+### Clínica Happy Bodies
+Nome escolhido pelo ChatGPT 🤣
+
 ### Fontes, ícones e gráficos
 
 1. Fonte: Inter (/fonts)
