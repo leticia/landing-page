@@ -14,12 +14,8 @@
 }
 
 @media (max-width: 755px) {
-    header ul li {
+    header ul {
         margin-bottom: 0.5em;
-    }
-
-    header ul li#button {
-        margin-bottom: 2em;
     }
 
     section#landing .landing-container {
